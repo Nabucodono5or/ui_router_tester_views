@@ -22,5 +22,8 @@
   "dependencies": {
     "angular": "^1.7.9",
     "babel-plugin-transform-html-import-to-string": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
   }
 }
