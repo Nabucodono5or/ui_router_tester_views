@@ -1,4 +1,9 @@
-function appConfig($stateProvider) {
+function appConfig($urlRouterProvider, $stateProvider) {
+  let otherwise = {
+    name: "roles",
+    url: "/",
+  };
+
   let heroi = {
     name: "heroi",
     url: "/heroi",
@@ -12,7 +17,11 @@ function appConfig($stateProvider) {
     component: "status"
   };
 
-  $stateProvider.state(heroi).state(status);
+  $urlRouterProvider.otherwise("/");
+  $stateProvider
+    .state(heroi)
+    .state(status)
+    .state(otherwise);
 }
 
 export default appConfig;
