@@ -1,11 +1,13 @@
 function appConfig($urlRouterProvider, $stateProvider) {
   let otherwise = {
-    name: "roles",
+    name: "home",
     url: "/",
+    component: "home"
   };
 
   let heroi = {
     name: "heroi",
+    parent: otherwise,
     url: "/heroi",
     component: "heroi"
   };
