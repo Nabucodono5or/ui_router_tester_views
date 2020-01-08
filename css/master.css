@@ -2,12 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #050517;
-  color: #F7F7F7;
+  color: #f7f7f7;
 }
 
 body {
-    background-color: #F7F7FF;
+  background-color: #f7f7ff;
 }
 
 .container {
@@ -21,20 +20,44 @@ body {
 
 .left {
   padding: 1rem;
-  grid-row: 1/3;
-  background-color: #FFF;
+  grid-column: 1/2;
+  width: 100%;
+  grid-row: 1/4;
+  background-color: #fff;
   border: 0.15rem solid #db5461;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 .right {
+  position: absolute;
+  right: -1px;
+  height: 99vh;
+  top: 20px;
+  width: 100vh;
   padding: 1rem;
   background-color: #a379c9;
   border-radius: 0.3rem;
 }
 
 .bottom-right {
+  position: relative;
+  bottom: -40vh;
   padding: 1rem;
   background-color: #050517;
-  grid-column: 2/3;
+}
+
+.role-title {
+  color: #050517;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.role-name {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: .3rem;
+  color: #050517;
+}
+
+.role-box {
+  margin: .3rem;
+  margin-top: 1.5rem;
 }

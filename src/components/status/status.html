@@ -1,1 +1,12 @@
 <h1 ng-bind="vm.title"></h1>
+
+<div class="status-box">
+    <p class="status-name">Nome: <span ng-bind="vm.heroi.name"></span></p>
+    <p class="status-name">Vida: <span ng-bind="vm.heroi.vida"></span></p>
+    <p class="status-name">Type: <span ng-repeat="type in vm.heroi.type" ng-bind="type"></span></p>
+    <p class="status-name">Dano: <span ng-bind="vm.heroi.damage"></span></p>
+    <p class="status-name">Cura: <span ng-bind="vm.heroi.healing"></span></p>
+    <p class="status-name">Munição: <span ng-bind="vm.heroi.ammo"></span></p>
+    <p class="status-name">Tempo de Carregamento: <span ng-bind="vm.heroi.reloadTime"></span></p>
+    <p class="status-name">Dano crítico: <span ng-bind="vm.heroi.headshot"></span></p>
+</div>

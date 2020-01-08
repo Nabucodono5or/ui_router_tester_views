@@ -1,6 +1,7 @@
 function RolesController() {
-    var vm = this;
-    vm.title = "Roles Componente";
+  var vm = this;
+  vm.title = "Roles Componente";
+  vm.listRoles = ["Tank", "Suporte", "DPS"];
 }
 
-export default RolesController
+export default RolesController;

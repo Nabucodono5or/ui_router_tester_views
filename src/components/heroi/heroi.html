@@ -1,1 +1,9 @@
-<h1 ng-bind='vm.title'></h1>
+<h1 ng-bind="vm.title"></h1>
+
+<div class="heroi-box">
+  <h4 class="heroi-name" ng-repeat="heroi in vm.herois" ng-bind="heroi"></h4>
+</div>
+
+<div class="bottom-right">
+  <status></status>
+</div>
