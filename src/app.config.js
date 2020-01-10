@@ -8,7 +8,7 @@ function appConfig($urlRouterProvider, $stateProvider) {
   let heroi = {
     name: "heroi",
     parent: otherwise,
-    url: "/heroi",
+    url: "/heroi?role",
     component: "heroi"
   };
 

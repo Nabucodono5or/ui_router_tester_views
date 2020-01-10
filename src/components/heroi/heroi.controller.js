@@ -1,14 +1,9 @@
-function HeroiController() {
-    var vm = this;
-    vm.title = 'heroi controller';
-    vm.herois = [
-        'Ana',
-        'Zenyatta',
-        'Lucio',
-        'Mercy',
-        'Baptiste',
-        'Bigitte',
-    ]
-}
+let heroiController = function HeroiController($stateParams, heroiService) {
+  var vm = this;
+  vm.title = $stateParams.role;
+  vm.herois = heroiService.listaHerois(vm.title);
+};
 
-export default HeroiController
+heroiController.$inject = ["$stateParams", "heroiService"];
+
+export default heroiController;
