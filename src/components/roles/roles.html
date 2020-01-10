@@ -1,7 +1,12 @@
 <h1 class="role-title" ng-bind="vm.title"></h1>
 
 <div class="role-box">
-  <h3 class="role-name" ng-repeat="role in vm.listRoles" ng-bind="role" ui-sref="heroi({ role: role})"></h3>
+  <h3
+    class="role-name"
+    ng-repeat="role in vm.listRoles"
+    ng-bind="role"
+    ui-sref="heroi({ role: role})"
+  ></h3>
 </div>
 
 <div class="right">

@@ -16,6 +16,9 @@ function appConfig($urlRouterProvider, $stateProvider) {
     name: "status",
     parent: heroi,
     url: "/status",
+    params: {
+      heroi: null,
+    },
     component: "status"
   };
 
