@@ -1,16 +1,9 @@
-function StatusController() {
+let statusController = function StatusController($stateParams, statusService) {
   var vm = this;
-  vm.title = "Status componente";
-  vm.heroi = {
-    name: "Ana",
-    vida: 200,
-    type: ["Projectile", "Hitscan"],
-    damage: 70,
-    healing: 75,
-    ammo: 14,
-    reloadTime: 1.5,
-    headshot: ''
-  };
+  vm.title = $stateParams.heroi;
+  vm.heroi = statusService.heroiStatus(vm.title);
 }
 
-export default StatusController;
+statusController.$inject = ["$stateParams", "statusService"];
+
+export default statusController;

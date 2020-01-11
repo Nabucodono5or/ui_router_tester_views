@@ -1,8 +1,8 @@
 function heroiFactory() {
   var herois = {
     Tank: ["Hammond", "Reinhart", "Winston", "Dva"],
-    Suporte: ["Ana", "Zenyatta", "Lucio", "Mercy", "Baptiste", "Bigitte"],
-    DPS: ["Mcree", "Genji", "Ashe", "Doomfist", "Hanzo", "Junkrat"]
+    Suporte: ["Ana", "Zenyatta"],
+    DPS: ["Mcree", "Genji"]
   };
 
   var service = {
@@ -19,3 +19,10 @@ function heroiFactory() {
 }
 
 export default heroiFactory;
+
+
+// var herois = {
+//   Tank: ["Hammond", "Reinhart", "Winston", "Dva"],
+//   Suporte: ["Ana", "Zenyatta", "Lucio", "Mercy", "Baptiste", "Bigitte"],
+//   DPS: ["Mcree", "Genji", "Ashe", "Doomfist", "Hanzo", "Junkrat"]
+// };
