@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Nabucodono5or/ui_router_tester_views#readme",
   "dependencies": {
     "@uirouter/angularjs": "^1.0.24",
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "angular-ui-router.statehelper": "^1.3.1",
     "babel-plugin-transform-html-import-to-string": "0.0.1"
   },
